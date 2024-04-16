@@ -85,10 +85,10 @@ enum keymap_layers {
  * `KC_RPRN`.
  */
 #define LAYOUT_LAYER_SYMBOLS                                                                  \
-    KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR, _______________DEAD_HALF_ROW_______________, \
+    KC_LCBR, KC_AMPR, KC_ASTR, KC_RPRN, KC_RCBR, _______________DEAD_HALF_ROW_______________, \
     KC_COLN,  KC_DLR, KC_PERC, KC_CIRC, KC_PLUS, ______________HOME_ROW_GACS_R______________, \
     KC_TILD, KC_EXLM,   KC_AT, KC_HASH, KC_PIPE, _______________DEAD_HALF_ROW_______________, \
-                       XXXXXXX, KC_GRV, KC_UNDS, _______, XXXXXXX, XXXXXXX
+                       KC_LPRN, KC_GRV, KC_UNDS, _______, XXXXXXX, XXXXXXX
 
 /**
  * \brief Add Home Row mod to a layout.
