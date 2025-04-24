@@ -93,7 +93,7 @@ enum keymap_layers {
 /**
  * \brief Add Home Row mod to a layout.
  *
- * Expects a 10-key per row layout.  Adds support for GACS (Gui, Alt, Ctl, Shift)
+ * Expects a 10-key per row layout.  Adds support for GACS (Gui, Alt, Shift, Ctl)
  * home row.  The layout passed in parameter must contain at least 20 keycodes.
  *
  * This is meant to be used with `LAYER_ALPHAS_QWERTY` defined above, eg.:
@@ -106,8 +106,8 @@ enum keymap_layers {
     ...)                                                               \
              L00,         L01,         L02,         L03,         L04,  \
              R05,         R06,         R07,         R08,         R09,  \
-      LGUI_T(L10), LALT_T(L11), LCTL_T(L12), LSFT_T(L13),        L14,  \
-             R15,  RSFT_T(R16), RCTL_T(R17), LALT_T(R18), RGUI_T(R19), \
+      LGUI_T(L10), LALT_T(L11), LSFT_T(L12), LCTL_T(L13),        L14,  \
+             R15,  RCTL_T(R16), RSFT_T(R17), RALT_T(R18), RGUI_T(R19), \
       __VA_ARGS__
 #define HOME_ROW_MOD_GACS(...) _HOME_ROW_MOD_GACS(__VA_ARGS__)
 
